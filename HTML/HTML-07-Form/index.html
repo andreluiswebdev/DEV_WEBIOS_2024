@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- FORMULARIOS -->
+    <!-- atributo action manda as informações p um destinatario -->
+    <!-- elemento input determina um campo de entrada -->
+    <section>
+        <h2>Pacotes de viagem</h2>
+        <form method="get" action="./inscricao.html" target="_blank">
+
+            <fieldset style="width: 200px;">
+                <legend>Dados do usuário</legend>
+                <label>Nome:</label>
+                <input type="text" name="nome">
+                <br><br>
+
+                <label>Idade:</label>
+                <input type="number" name="idade">
+                <br><br>
+
+                <label>E-mail:</label>
+                <input type="email" name="email" required>
+                <br><br>
+
+                <label>Telefone:</label>
+                <input type="tel" name="contato">
+                <br><br>
+
+                <!-- type radio cria um campo de seleção que só pode escolher um, lembrando que tem que utilizar as mesmas tags input nas duas -->
+                <input type="radio" name="ida">
+                <label>Somente Ida</label>
+
+                <br><br>
+
+                <input type="radio" name="ida">
+                <label>Ida e volta</label>
+
+
+
+
+            </fieldset>
+            <br>
+
+
+            <!--atributo checkbox adiciona uma caixa que você pode escolher mais de uma opção  -->
+            <fieldset>
+                <legend>Quais serviços deseja contratar?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                </label>
+
+                <label>
+                    <br><input type="checkbox" name="veiculo" value="Veiculo">Reserva de veículos
+                </label>
+
+                <br><br>
+            </fieldset>
+            <br>
+
+            <!-- range é uma barra de escolha  -->
+            <fieldset>
+                <legend>Quantidade de crianças</legend>
+                1
+                <input type="range">
+                10
+            </fieldset>
+
+            <br>
+
+            <!-- select é uma lista suspensa pré-definada, sem possibilidade de alterações -->
+            <fieldset>
+                <legend>Aeroporto</legend>
+                <select name="Aeroporto">
+                    <option value=""></option>
+                    <option value="gru">Gru - Guarulhos</option>
+                    <option value="congonhas">Congonhas</option>
+                    <option value="santosdumont">Santos Dumont</option>
+                    <option value="viracopos">Aeroporto Internacional Viracopos</option>
+                    <option value="campoDeMarte">Campo de Marte</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <!-- datalist é uma caixa que da pra você escrever e te ajuda com palavras semelhantes -->
+            <fieldset>
+                <legend>Escolha um estado:</legend>
+                <input type="text" list="listaEstados" name="estados">
+                <datalist id="listaEstados">
+                    <option value="São Paulo"></option>
+                    <option value="Amapá"></option>
+                    <option value="Tocantins"></option>
+                    <option value="Sergipe"></option>
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Rio Grande do Sul"></option>
+                    <option value="Rio Grande do Norte"></option>
+                    <option value="Bahia"></option>
+                    <option value="Paraíba"></option>
+                    <option value="Roraima"></option>
+                    <option value="Amazonas"></option>
+                </datalist>
+            </fieldset>
+
+            <br>
+
+            <!-- textarea cria uma área de comentário maior -->
+
+            <fieldset>
+                <legend>Deixe suas observações</legend>
+                <textarea cols="50" rows="10"></textarea>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Salvar"></input>
+
+        </form>
+    </section>
+</body>
+
+</html>

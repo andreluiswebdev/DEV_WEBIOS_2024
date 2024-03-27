@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Opinião sobre a Empresa</title>
+</head>
+
+<body>
+    <h1><i>Formulário de Opinião sobre a Empresa</i></h1>
+    <form method="get" action="">
+        <fieldset>
+            <legend for="nome_empresa">Nome da Empresa:</legend>
+            <input type="text" id="nome_empresa" name="nome_empresa" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="data_entrada">Data de Entrada na Empresa:</legend>
+            <input type="date" id="data_entrada" name="data_entrada" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="quantidade_funcionarios">Quantidade de Funcionários na Empresa:</legend>
+            <input type="number" id="quantidade_funcionarios" name="quantidade_funcionarios" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="salario">Salário:</legend>
+            <input type="number" id="salario" name="salario" required>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="ainda_na_empresa">Ainda trabalha na empresa?</legend>
+            <input type="radio" id="ainda_na_empresa_sim" name="ainda_na_empresa" value="sim" required>
+            <label for="ainda_na_empresa_sim">Sim</label>
+            <input type="radio" id="ainda_na_empresa_nao" name="ainda_na_empresa" value="nao">
+            <label for="ainda_na_empresa_nao">Não</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="tipo_contratacao">Tipo de Contratação:</legend>
+            <input type="radio" id="tipo_contratacao_clt" name="tipo_contratacao" value="CLT" required>
+            <label for="tipo_contratacao_clt">CLT</label>
+            <input type="radio" id="tipo_contratacao_pj" name="tipo_contratacao" value="PJ">
+            <label for="tipo_contratacao_pj">PJ</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="beneficios">Benefícios Recebidos:</legend>
+            <label><input type="checkbox" id="vale_refeicao" name="beneficios[]" value="vale_refeicao"> Vale
+                Refeição</label><br>
+            <label><input type="checkbox" id="vale_alimentacao" name="beneficios[]" value="vale_alimentacao"> Vale
+                Alimentação</label><br>
+            <label><input type="checkbox" id="vale_transporte" name="beneficios[]" value="vale_transporte"> Vale
+                Transporte</label><br>
+            <label><input type="checkbox" id="academias" name="beneficios[]" value="academias"> Academias</label><br>
+            <label><input type="checkbox" id="plr" name="beneficios[]" value="plr"> PLR</label><br>
+            <label><input type="checkbox" id="plano_saude" name="beneficios[]" value="plano_saude"> Plano de
+                Saúde</label><br>
+            <label><input type="checkbox" id="plano_odontologico" name="beneficios[]" value="plano_odontologico"> Plano
+                Odontológico</label><br>
+            <label><input type="checkbox" id="cesta_basica" name="beneficios[]" value="cesta_basica"> Cesta
+                Básica</label><br>
+            <label><input type="checkbox" id="day_off" name="beneficios[]" value="day_off"> Day Off</label><br>
+            <label><input type="checkbox" id="bolsa_estudos" name="beneficios[]" value="bolsa_estudos"> Bolsa de
+                Estudos</label><br>
+            <label><input type="checkbox" id="licenca_maternidade_paternidade" name="beneficios[]"
+                    value="licenca_maternidade_paternidade"> Licença Maternidade/Paternidade</label><br>
+            <label><input type="checkbox" id="pet_friendly" name="beneficios[]" value="pet_friendly"> Pet
+                Friendly</label><br>
+            <label><input type="checkbox" id="emprestimo_consignado" name="beneficios[]" value="emprestimo_consignado">
+                Empréstimo Consignado</label><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="pros_empresa">Prós da Empresa:</legend>
+            <textarea rows="6" cols="40" id="pros_empresa" name="pros_empresa"></textarea>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend for="contras_empresa">Contras da Empresa:</legend>
+            <textarea rows="6" cols="40" id="contras_empresa" name="contras_empresa"></textarea><br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Enviar Opinião"></input>
+    </form>
+</body>
+<footer><p>Desenvolvido por André Luis</p></footer>
+
+</html>
