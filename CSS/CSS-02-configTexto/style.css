@@ -1,0 +1,25 @@
+body{
+    /* sistema rgb background-color: rgb(28, 27, 27); */
+    /* sistema decimal background-color: #000000; */
+    /* sistema hexadecimal background-color: #5c3e03; */
+    background-color: #313131;
+    font-family: "Roboto Mono", monospace;
+}
+
+h1{
+    color: rgb(255, 175, 0);
+    font-size: 60px;
+}
+
+p{
+    color: rgb(255, 175, 0);
+    font-size: 2em;
+}
+
+img{
+    /* para curvar levementa a borda: border-radius: */
+    /* width: largura da foto */
+    /* height: altura da foto */
+    height: 260px;
+    width: auto;
+}
