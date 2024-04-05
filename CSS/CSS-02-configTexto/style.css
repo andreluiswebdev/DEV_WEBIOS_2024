@@ -2,6 +2,9 @@ body{
     /* sistema rgb background-color: rgb(28, 27, 27); */
     /* sistema decimal background-color: #000000; */
     /* sistema hexadecimal background-color: #5c3e03; */
+    /* font-weight serve para definir a expessura da fonte */
+    /* font-style serve para deixar a fonte em itálico */
+    /* line-height cria um espaçamento entre as linhas */
     background-color: #313131;
     font-family: "Roboto Mono", monospace;
 }
@@ -9,17 +12,24 @@ body{
 h1{
     color: rgb(255, 175, 0);
     font-size: 60px;
+    text-shadow: 10px 10px 20px orange;    /* primeiro é largura, segundo altura, terceiro é o raio e quarto é a cor */
+    text-align: center;
 }
 
 p{
     color: rgb(255, 175, 0);
     font-size: 2em;
+    text-align: center;
 }
 
 img{
     /* para curvar levementa a borda: border-radius: */
     /* width: largura da foto */
     /* height: altura da foto */
-    height: 260px;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: 10px 10px 20px orange; /*serve para dar sombra à uma imagem */
+    display: block;
+    margin: auto;
 }
