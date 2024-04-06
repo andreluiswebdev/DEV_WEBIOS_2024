@@ -7,12 +7,12 @@ body{
 
 header{
     background-color: #6590d1;
-    box-shadow: 3px 3px 3px #48789f;
+    text-shadow: 3px 3px 3px #48789f;
 }
 
 h2{
     background-color: #6590d1;
-    box-shadow: 3px 3px 3px #48789f;
+    text-shadow: 3px 3px 3px #48789f;
 }
 
 img{
