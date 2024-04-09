@@ -1,0 +1,21 @@
+/* Seletor pai > o que for aplicado dentro dele será aplicado na pagina web inteira inclusive na tag body */
+*{
+margin: 0;
+    padding: 0;
+      }
+
+p{
+    color: red;
+}
+
+.corAzul{
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 10px 10px 10px palevioletred;
+    text-align: center;
+}
+
+#mudancaUnica{
+    color: green;
+}
