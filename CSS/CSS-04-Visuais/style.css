@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://umlivropordia.com.br/wp-content/uploads/2022/12/duna-divulgacao-jpg.webp");
+    /* background-repeat: no-repeat ;  serve para deixar somente UMA imagem no fundo*/
+    /* background-size: 100%; serve para deixar a imagem no fundo todo da página */
+    background-attachment: scroll;
+    /* background-repeat: repeat-x; repetir imagem só na horizontal*/
+    /* background-repeat: repeat-y; repetir imagem na vertical */
+}
+
+#primeiroParagrafo{
+    border: 2px solid green;
+    border-radius: 10px;
+    /* border-radius: 10px 5px 0 80px;
+    top right bottom left */
+}
+
+img{
+    border-radius: 10px;
+}
+
+
+#imagem{
+    border: 10px solid gray;
+    border-radius: 10px;
+}
