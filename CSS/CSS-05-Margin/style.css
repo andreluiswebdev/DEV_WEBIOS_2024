@@ -1,4 +1,22 @@
+body{
+    margin-right: 0;
+    margin-left: 0;
+}
+
 #secao{
-    border: 2px solid black;
-padding: 20px;
+    border: 2px solid rgb(255, 115, 0);
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#secao2{
+    border: 5px solid gray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#secao3{
+    border: 1px solid blue;
+    padding: 10px;
 }
