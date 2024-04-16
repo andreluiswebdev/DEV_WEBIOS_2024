@@ -1,0 +1,5 @@
+
+/* first-child é o primeiro filho que esta solicitando */
+p:first-child{
+    background-color: aqua;
+}
