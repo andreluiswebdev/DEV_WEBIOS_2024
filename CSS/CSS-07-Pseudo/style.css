@@ -1,5 +1,51 @@
-
+body{
+    background-color: gray;
+}
 /* first-child é o primeiro filho que esta solicitando */
 p:first-child{
     background-color: aqua;
+}
+
+#primeiroFilho{
+    border: 5px solid black;
+}
+
+#botao{
+    border: 1px solid white;
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+#botao:hover{
+    color: white;
+    background-color: blue;
+    font-size: 50px;
+}
+
+#paragrafoHover:hover{
+    background-color: #ff6347;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: gold;
+}
+
+#tituloh2:hover{
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+     font-style: normal;
+}
+
+#imagemHover:hover{
+    box-shadow: 10px 10px 10px #FFFACD;
+    width: 700px;
+    height: 500px;
+}
+
+#pseudo::before{
+    content: 'utilizando before - ';
+}
+
+#pseudo::after{
+    content: ' utilizando after - ';
 }
