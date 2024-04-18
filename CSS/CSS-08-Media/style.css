@@ -8,7 +8,33 @@ img{
 min-width / max-width */
 
 @media (max-width: 450px) {
+  body{
+    background-color: aqua;
+  }
+  
   img{
     width: 200px;
+  }
+  
+  img:hover{
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
   }  
+}
+
+
+@media(min-width: 452px){
+  body{
+    background-color: black;
+  }
+  
+  img{
+    width: 300px;
+  }
+
+  img:hover{
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px red;
+  }
 }
