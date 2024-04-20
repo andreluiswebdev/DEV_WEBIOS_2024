@@ -1,0 +1,190 @@
+:root {
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space: 24px;
+    --space-md: 32px;
+    --space-lg: 48px;
+    --space-xlg: 64px;
+    --screen-xs: 360px;
+    --screen-sm: 768px;
+    --screen-md: 992px;
+    --screen-lg: 1280px;
+    --screen-xlg: 1440px;
+}
+
+@charset "utf-8";
+*{
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: url(IMG/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-size: 25x;
+}
+
+header {
+    background-color: #314A20;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 54%;
+    padding: 3vh;
+    margin-bottom: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #c1c2bc;
+    opacity: 1;
+    font-style: italic;
+    font-size: 200%;
+}
+
+p{
+    text-align: center;
+}
+
+#sinopse{
+    margin-top: 100px;
+    display: grid;
+    column-gap: var(--space);
+    row-gap: var(--space);
+    grid-template-columns: auto 1fr; /* Imagem ou vídeo na primeira coluna, texto na segunda coluna */
+    border: 1px solid #533618;
+    border-radius: 10px;
+    margin: 2vh 0;
+    padding: 2vh;
+    box-sizing: border-box;
+    background-color: #C1C2BC;
+    max-width: 100%;
+}
+
+img{
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+#video {
+    margin-top: 100px;
+    display: grid;
+    column-gap: var(--space);
+    row-gap: var(--space);
+    grid-template-columns: auto 1fr; /* Vídeo na primeira coluna, texto na segunda coluna */
+    border: 1px solid #533618;
+    border-radius: 10px;
+    margin: 2vh 0;
+    padding: 2vh;
+    box-sizing: border-box;
+    background-color: #C1C2BC;
+    max-width: 100%;
+}
+
+#video iframe {
+    max-width: 100%; /* Garante que o vídeo não ultrapasse o contêiner */
+    height: 400px;
+}
+
+::selection {
+    background-color: #314A20;
+    color: #C1C2BC;
+}
+*::-moz-selection {
+    background-color: #314A20;
+    color: #C1C2BC;
+}
+
+.container p::first-letter {
+    font-size: 200%;
+    background-color: #314A20;
+}
+
+.container {
+    background-color: #725436;
+    margin: 0% 5%;
+    padding: 2em;
+    float: left;
+}
+
+#noticias {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Máximo de 2 colunas */
+    grid-template-rows: repeat(5, auto); /* Máximo de 5 linhas */
+    column-gap: 20px;
+    row-gap: 20px;
+    border: 1px solid #533618;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #C1C2BC;
+    max-width: 100%;
+    align-content: start; /* Alinha as linhas de grid ao topo do contêiner */
+}
+
+.curiosidades {
+    display: flex;
+}
+
+.curiosidades img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.curiosidades p {
+    flex: 1;
+}
+
+
+img:hover {
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+}
+
+.button {
+    background-color: #533618;
+    color: #C1C2BC;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: #C1C2BC;
+    background-color: #314A20;
+}
+
+footer {
+    margin-top: auto;
+    background-color:#314A20;
+    color: #c1c2bc;
+    padding: 3vh;
+    font-size: .8em;
+}
+
+footer p::before{
+    content: "Copyright © | ";
+}
+
+footer p::after {
+    content: " | André Luis ";
+}
