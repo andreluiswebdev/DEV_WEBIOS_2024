@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: stretch;
+    /* align-items define o comportamento padrão de como os itens flex estão dispostos */
+    /* justify-content ela define o alinhamento dos itens */
+    /* flex-wrap: wrap; serve para quebrar linhas conforme o tamanho da tela  */
+    /* flex-direction: ; serve para dizer a direção dos itens */
+    /* gap: 20px; /*espaçamento dos itens /* */
+}
+
+.item{
+    border: 5px solid black;
+    background-color: aqua;
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+}
+
+.item:hover{
+    transform: scale(0.8);
+}
+
+.div1{
+    order: 1;
+}
