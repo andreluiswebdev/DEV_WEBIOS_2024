@@ -1,11 +1,46 @@
-#container{
+/* #container{
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    /* 1fr é uma fracção */
+    grid-template-columns: repeat(9, 1fr); */
+    /* 1fr é uma fracção   */
     /* primeiro para quantidade de vezes p repetir e segundo é a largura */
-}
+/* } */
 
-.itens{
+/* .itens{
     border: 2px solid black;
     background-color: aqua;
+} */
+
+
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+    column-gap: 10px; 
+    row-gap: 15px;
+    /* grid-template-rows: repeat(3, 80%); */
+    /* text-align: center;
+    justify-items: stretch;
+    align-items: stretch; */
+}
+
+#item-1{
+    grid-area: header;
+}
+
+#item-2{
+    grid-area: main;
+}
+
+#item-3{
+    grid-area: sidebar;
+}
+
+#item-4{
+    grid-area: footer;
+}
+    
+
+.itens{
+    border: 1px solid black;
 }
