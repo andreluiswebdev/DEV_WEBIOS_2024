@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  input, button {
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  footer {
+    text-align: center; 
+    margin-top: 20px;  
+    font-size: 0.9rem; 
+    color: #888;      
+  }
+  
+  #copyright {
+    margin: 0;    
+  }
