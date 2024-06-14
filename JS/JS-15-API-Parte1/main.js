@@ -5,11 +5,9 @@ function getImage(e) {
     // console.log(url_api); 
 
     // Função fetch para buscar dados na API 
-    fetch(url_api, {
-        method: 'GET',
-    })
+    fetch(url_api)
         .then((response) => {
-            return response.json();
+            return response.json(); // receber o JSON
         })
         .then((data) => {
             // console.log(data); 
@@ -25,3 +23,11 @@ function getImage(e) {
             document.querySelector('#imagem_aqui').innerHTML = imagem;
         });
 }
+
+
+// {"message":"https://images.dog.ceo/breeds/whippet/n02091134_12341.jpg","status":"success"}
+
+// stringify >> Pega um JSON e transforma em um objeto
+//  JSON >> Transforma um objeto em JSON
+
+// fetch(url).then(receber o JSON).then(Tratar o JSON e mostrar as informações em tela para o usuario).catch(catch é para tratar erros retornados pela API)
