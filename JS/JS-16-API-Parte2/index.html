@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-
+beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.1.1/css/all.min.css" integrity="sha512-
+KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==
+ crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="#">
+    <title>Busca CEP</title>
+</head>
+
+<body>
+    <section class="container mt-3 p-2 border border-2 border-success rounded-4">
+        <h1 class="bg-light text-center p-1 m-0"><i class="text-primary fa-solid faglobe pe-3"></i>Busca CEP</h1>
+        <h2 class="text-center text-secondary p-2">Entre com um número válido de
+            CEP</h2>
+        <form method="get" action=".">
+            <div class="container row mb-3">
+                <div class="col-2">
+                    <label class="form-label fw-bold">Cep:</label>
+                </div>
+                <div class="col-3">
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9">
+
+                    <span id="erroMessage"></span>
+                </div>
+            </div>
+            <div class="container row mb-1">
+                <div class="col-2">
+                    <label class="form-label col fw-bold">Rua:</label>
+                </div>
+                <div class="col-3">
+                    <input class="col" name="rua" type="text" id="rua" size="45" />
+                </div>
+            </div>
+            <div class="container row">
+                <div class="col-2">
+                    <label class="form-label col fw-bold">Complemento:</label>
+                </div>
+                <div class="col-3">
+                    <input name="complemento" type="text" id="complemento" size="20" /><br />
+                </div>
+            </div>
+            <div class="container row mb-1">
+                <div class="col-2">
+                    <label class="form-label col fw-bold">Bairro:</label>
+                </div>
+                <div class="col-3">
+                    <input name="bairro" type="text" id="bairro" size="40" />
+                </div>
+            </div>
+            <div class="container row mb-1">
+                <div class="col-2">
+                    <label class="form-label col fw-bold">Cidade:</label>
+                </div>
+                <div class="col-3">
+                    <input name="cidade" type="text" id="cidade" size="40" />
+                </div>
+            </div>
+            <div class="container row mb-1">
+                <div class="col-2">
+                    <label class="form-label col fw-bold">Estado:</label>
+                </div>
+                <div class="col-3">
+                    <input name="uf" type="text" id="uf" size="2" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <br>
+    <div class="container">
+        <div id="output"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
